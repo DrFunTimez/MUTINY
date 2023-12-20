@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://csfvy6xgpdwma"]
+
+[ext_resource type="Script" path="res://Server Info.gd" id="1_4amf2"]
+
+[node name="Server Info" type="HBoxContainer"]
+offset_right = 194.0
+offset_bottom = 26.0
+script = ExtResource("1_4amf2")
+
+[node name="Name" type="Label" parent="."]
+layout_mode = 2
+text = "Name"
+
+[node name="IP" type="Label" parent="."]
+layout_mode = 2
+text = "IP                     "
+
+[node name="P" type="Label" parent="."]
+layout_mode = 2
+text = "Players        "
+
+[node name="JB" type="Button" parent="."]
+layout_mode = 2
+text = "Join"

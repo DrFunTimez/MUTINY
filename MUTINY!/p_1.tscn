@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://b3onctrk4oc08"]
+
+[ext_resource type="Script" path="res://P1.gd" id="1_4bs64"]
+[ext_resource type="Texture2D" uid="uid://c0y6f1ul30xyj" path="res://MUTINY SPRITES/oarnge.png" id="2_ap5dl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nyfue"]
+size = Vector2(8, 9)
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_hpnsm"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/sync = true
+properties/0/watch = false
+
+[node name="P1" type="CharacterBody2D"]
+position = Vector2(7, -8)
+script = ExtResource("1_4bs64")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("2_ap5dl")
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_nyfue")
+
+[node name="MultiPlayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_hpnsm")

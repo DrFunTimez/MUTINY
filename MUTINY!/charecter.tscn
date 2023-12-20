@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://wras3rmt8l0q"]
+
+[ext_resource type="Script" path="res://Charecter.gd" id="1_sg7xu"]
+[ext_resource type="Texture2D" uid="uid://c0y6f1ul30xyj" path="res://MUTINY SPRITES/oarnge.png" id="2_j0gu4"]
+
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_rn1a4"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+
+[node name="BOB" type="CharacterBody2D"]
+script = ExtResource("1_sg7xu")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_j0gu4")
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_rn1a4")
+
+[node name="Camera2D" type="Camera2D" parent="."]
