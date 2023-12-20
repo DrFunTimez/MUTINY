@@ -1,0 +1,9 @@
+res://control.tscn
+res://Scripts/Stairs.gd
+res://charecter.tscn
+res://main_game.tscn
+res://Objects/stairs.tscn
+res://p_1.tscn
+res://Objects/stairs_destination.tscn
+res://TaskScenes/SwabDeck.tscn
+res://TaskScripts/SwabDeck.gd

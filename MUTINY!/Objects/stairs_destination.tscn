@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://iwkc4co8g5ju"]
+
+[ext_resource type="Texture2D" uid="uid://c8yvkwr7h4i8" path="res://MUTINY SPRITES/red.png" id="1_xrlip"]
+
+[node name="StairsDestination" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xrlip")
